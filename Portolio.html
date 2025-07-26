@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="TL.png">
+    <title>Cript</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Saira:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1508020268086-b96cf4f4bb2e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            flex-wrap: wrap; /* Allows profiles to wrap on smaller screens */
+        }
+
+        .profiles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates a responsive grid layout */
+            gap: 20px; /* Gap between profiles */
+            padding: 20px; /* Padding around the profiles area */
+        }
+
+        .profile {
+            background-color: rgba(255, 255, 255, 0.5); /* Slightly more opacity for better readability */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+            backdrop-filter: blur(5px); /* Blurred background for focus on content */
+        }
+
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            border: 3px solid #fff; /* Highlight profile images */
+        }
+
+        .profile h2 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        .links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 5px;
+            transition: transform 0.2s ease; /* Smooth transition for scaling */
+        }
+
+        .links a:hover, .links a:focus { /* Enhanced visual feedback on hover and focus */
+            color: #ffc107;
+            transform: scale(1.1); /* Slightly enlarges the link icon and text */
+        }
+
+        .links i {
+            font-size: 1.2rem;
+            margin-right: 5px;
+        }
+
+        .profile:hover, .profile:focus-within { /* Effect when hovering or focusing within a profile */
+            transform: scale(1.03); /* Slightly scale up the profile card */
+            box-shadow: 0 8px 12px rgba(0,0,0,0.2); /* More pronounced shadow for lifted effect */
+        }
+    </style>
+
+<body>
+    <section class="profiles">
+        <div class="profile">
+            <img src="TL.png" class="logo" alt="dp" />
+            <h2>Chaussat Emma</h2>
+            <div class="links">
+                <a href="./Chaussat-Emma/index.html">
+                    <i class="fa-brands fa-chrome"></i>
+                    <span>Portfolio</span>
+                </a>
+                <a href="https://www.linkedin.com/in/lucas-tsl/">
+                    <i class="fa-brands fab fa-linkedin-in"></i>
+                    <span>Linkedin</span>
+                </a>
+                <a href="https://www.instagram.com/lucas_pro_dev/">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.behance.net/lucastsl">
+                    <i class="fa-brands fa-behance"></i>
+                    <span>behance</span>
+                </a>
+                <a href="https://github.com/Lucas-tsl">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="profile">
+            <img src="MT.jpg" class="logo" alt="dp" />
+            <h2>Troteseil Mathis</h2>
+            <div class="links">
+                <a href="https://xd.adobe.com/view/741d85c0-5a9d-4356-ae7c-776dc6aa92db-214e/" target="_blank">
+                    <i class="fa-brands fa-chrome"></i>
+                    <span>Portfolio</span>
+                </a>
+                <a href="https://www.linkedin.com/in/mathis-troteseil-b69252198/">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>Linkedin</span>
+                </a>
+                <a href="https://www.instagram.com/matissu_prod/">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.behance.net/mathistroteseil2">
+                    <i class="fa-brands fa-behance"></i>
+                    <span>behance</span>
+                </a>
+                <a href="https://www.tiktok.com/@matissu_prod">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <span>TikTok</span>
+                </a>
+            </div>
+        </div> 
+        
+        
+        
+       
+        
+        
+        
+        
+
+        <!--<div class="profile">
+            <img src="logo-Gisseugi.svg" class="logo" alt="dp" />
+            <h2>Gisseugi Wold</h2>
+            <div class="links">
+                <a href="./Gisseugi new/index.html">
+                    <i class="fa-brands fa-chrome"></i>
+                    <span>Web Site</span>
+                </a>
+                <a href="https://www.instagram.com/gisseugi/">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.tiktok.com/@urfavcla?lang=fr">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <span>Tiktok</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="profile">
+            <img src="RueLucas_logo.png" class="logo" alt="Hotel-img" />
+            <h2>LT Hotel</h2>
+            <div class="links">
+                <a href="Hotel/index.php">
+                    <i class="fa-brands fa-chrome"></i>
+                    <span>Web Site</span>
+                </a>
+                <a href="https://www.instagram.com/gisseugi/">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://www.tiktok.com/@urfavcla?lang=fr">
+                    <i class="fa-brands fa-tiktok"></i>
+                    <span>Tiktok</span>
+                </a>
+            </div>
+        </div>-->
+    
+</body>
+
+
+</html>
